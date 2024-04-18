@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importa Link para manejar las rutas
-
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const Navbar = () => {
   const navbarStyles = {
@@ -23,7 +23,8 @@ const Navbar = () => {
   };
 
   const iconStyles = {
-    marginRight: '10px',
+    marginRight: '-50px',
+    color: '#fff', // Cambia el color del icono a blanco
   };
 
   return (
@@ -45,8 +46,8 @@ const Navbar = () => {
 
       {/* Iconos */}
       <div className="icons" style={{ display: 'flex', gap: '10px' }}>
-        <Link to="/login" style={iconStyles}>
-          <i className="fa-regular fa-user"></i>
+        <Link to="./login" style={iconStyles}>
+          <i className="fas fa-user"></i>
         </Link>
         <Link to="/carrito" style={iconStyles}>
           <i className="fas fa-shopping-cart"></i>
@@ -57,4 +58,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 

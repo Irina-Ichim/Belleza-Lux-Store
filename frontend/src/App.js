@@ -1,21 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'; // Elimina la importación de Switch aquí
-import '@fortawesome/fontawesome-free/css/all.css';
-
-
-import Navbar from './components/Navbar'; 
-
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import './App.css';
+import Login from './pages/Login';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
-        <Navbar />
-    
+        <Navbar />  {/* Render the navbar outside of Routes */}
+        <Routes>
+          
+          <Route path="/login" element={<Login />} />
+        </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
-
