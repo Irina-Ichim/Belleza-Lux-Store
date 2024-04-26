@@ -19,6 +19,7 @@ dependencies {
      implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("mysql:mysql-connector-java")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

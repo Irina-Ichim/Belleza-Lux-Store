@@ -1,13 +1,8 @@
 package org.example;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
+
 public class Usuario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+   
     private Long id;
 
     private String nombreApellido;
@@ -76,6 +71,17 @@ public class Usuario {
     public void setAdmin(String admin) {
         this.admin = admin;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombreApellido='" + nombreApellido + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", dni='" + dni + '\'' +
+                ", nombreUsuario='" + nombreUsuario + '\'' +
+                ", contrasena='" + contrasena + '\'' +
+                ", admin='" + admin + '\'' +
+                '}';
+    }
 }
-
-

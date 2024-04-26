@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="backend/.gradle/8.7/dependencies-accessors/91e51b11932b7893b6411faaf331058278bf7916/sources"/>
+	<classpathentry kind="src" path="backend/app/src/main/java"/>
+	<classpathentry kind="src" path="backend/app/src/test/java"/>
+	<classpathentry kind="lib" path="backend/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="backend/.gradle/8.7/dependencies-accessors/91e51b11932b7893b6411faaf331058278bf7916/classes"/>
+</classpath>
